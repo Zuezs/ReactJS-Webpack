@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+    background: #222;
+    color: white;
+}
+
+.navbar li {
+    list-style: none;    
+    display: flex;
+    margin: 5px;
+}
