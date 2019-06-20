@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+import ReactDOM from "react-dom";
 import Navbar from './js/components/Navbar/Navbar';
-//import Product from './js/components/Products/Products';
+import Home from './js/components/Home/Home';
+import logo from './logo.svg';
 import './App.css';
-//import ReactDOM from "react-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, fas)
 
 class App extends Component {
     render() {
@@ -15,7 +20,7 @@ class App extends Component {
 
                 </header>
                 <Navbar/>
-                
+                <Home/>
             </div>
         );
     }
